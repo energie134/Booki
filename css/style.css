@@ -164,6 +164,24 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    header div {
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    header nav {
+        width: 100%;
+        width: 375px;
+    }
+
+
 }
 
 
@@ -174,6 +192,7 @@ a {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      height: 50px;
   }
   
   header div {
@@ -196,12 +215,21 @@ a {
   
   
   }
+  header nav li {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-top: 2px solid white;
+  }
   
   
   nav ul {
       display: flex;
       list-style-type: none;
       height: 100%;
+      margin: 0;
+      width: 250px;
       gap: 68px;
   }
   
@@ -273,7 +301,9 @@ section.section1 {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    margin-top: 35px;
 }
+
 
   .filtres {
     display: flex;
@@ -285,44 +315,43 @@ section.section1 {
 
 }
 
-.filtreCard {
-    border: 2px solid #D9D9D9;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-    height: 50px;
-
-}
-
 .filtreCard:hover {
     background-color: #DEEBFF;
 }
 
 .filtreCard h3 {
     font-size: 17px;
-    width: 103px;
 }
 
 .filtreCard {
     display: flex;
     align-items: center;
     border-radius: 50px;
+    justify-content: center;
+    padding-right: 20px;
+    border: 2px solid #D9D9D9;
+    padding: 4px;
+    height: 50px;
+    padding-right: 20px;
 }
 
 .filtreCard h3 {
     display: flex;
-    justify-content: center;
+    white-space: nowrap;
 }
 
 .filtreCard i {
     font-size: 22px;
     display: flex;
     justify-content: center;
+    width: 50px;
 }
 
 .info {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 100px;
 }
 
 
@@ -381,7 +410,95 @@ article.marseilleCard img {
     padding-left: 15px;
 }
 
+a.AfficherPlus {
+    font-weight: 700;
+    font-size: 18px;
+}
 
+/*Activités*/
+
+.ActivitésCard {
+    width: 297.5px;
+    height: 439px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.ActivitésCard img {
+    width: 297.5px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ActivitésCards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ActivitésCard h3 {
+    margin: 0;
+    padding: 20px 19px 20px 19px;
+    font-size: 16px;
+}
+
+section.Activités {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 35px;
+    padding-bottom: 35px;
+    justify-content: center;
+}
+
+section.Activités h2 {
+    margin-bottom: 0;
+    font-size: 22px;
+    margin-left: 35px;
+}
+
+/*Footer*/ 
+
+footer {
+    margin-top: 35px;
+}
+
+.footer {
+    display: flex;
+    width: 1340px;
+    height: 163px;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.footerliste {
+    width: 446.66px;
+    height: 163px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.footerliste ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerliste h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer a {
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 
