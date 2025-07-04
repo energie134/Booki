@@ -164,22 +164,35 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    .main-container {
+        width: 100%;
+        max-width: 1440px;
+        box-sizing: border-box;
+        padding: 0;
+
+    }
     header {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 375px;
+        height: 115px;
         align-items: center;
     }
-    
     header div {
-        padding: 20px;
-        justify-content: center;
+        width: 121.08px;
+        height: 19px;
+        height: 79px;
+        padding: 30px;
     }
-    
-    header nav {
-        width: 100%;
+    header nav  {
         width: 375px;
+        height: 36px;
+        gap: 15px;
+        align-items: flex-start ;
     }
+
+
 
 
 }
@@ -469,7 +482,7 @@ footer {
 
 .footer {
     display: flex;
-    width: 1340px;
+    width: 100%;
     height: 163px;
     align-items: center;
     background-color: #F2F2F2;
